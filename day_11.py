@@ -69,8 +69,8 @@ def get_adjacent_seats(seat_map, row_number, column_number):
             positions.append((row_number,column_number-1))
         elif column_number == 0:
             positions.append((row_number,column_number+1))
-            positions.append((row_number-1,column_number-1))
-            positions.append((row_number+1,column_number-1))
+            positions.append((row_number-1,column_number+1))
+            positions.append((row_number+1,column_number+1))
         else:
             positions.append((row_number,column_number-1))
             positions.append((row_number,column_number+1))
